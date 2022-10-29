@@ -10,7 +10,7 @@ elseif(UNIX OR APPLE)
     set(TOOLCHAIN_SUFFIX "")
 endif()
 
-set(TOOLCHAIN_PREFIX riscv64-unknown-elf-)
+set(TOOLCHAIN_PREFIX riscv64-unknown-none-elf-)
 
 execute_process(
   COMMAND ${WHERE_CMD} ${TOOLCHAIN_PREFIX}gcc
